@@ -1,0 +1,26 @@
+
+.footer {
+    height: 90px;
+    background: #131A0A;
+    color: white;
+    text-align: start;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    color: #FFFFFF;
+    padding-left:3%;
+    position: relative;  
+    overflow: visible;   
+}
+
+.logo_footer {
+    position: absolute;
+    right: 0%;   
+    bottom: 60%;   
+    height: 119px; 
+    width: 179px;
+}

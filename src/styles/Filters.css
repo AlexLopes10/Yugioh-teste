@@ -1,0 +1,94 @@
+.filters {
+  width: 316px;
+  padding: 3%;
+  font-weight: 300;
+  font-family: "Inter";
+  margin-bottom: 10%;
+}
+
+.titulo_filter {
+  color: #34AC40;
+  border-bottom: 2px solid #34AC40;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.filters_tipo {
+  border-bottom: 2px solid #f97316;
+  padding-bottom: 10px;
+}
+
+.filters h3 {
+  color: #f97316;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.filters input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #f97316; 
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: 6px;
+  position: relative;
+}
+
+.filters input[type="checkbox"]:checked {
+  background-color: #fff;
+  border-color: #34AC40;  
+}
+
+.filters input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #34AC40;
+  font-size: 14px;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+}
+
+.filters label {
+  display: flex;             
+  align-items: center;       
+  gap: 6px;                  
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #666666;
+}
+
+.filter-buttons {
+  display: flex;          
+  justify-content: space-between;               
+  margin-top: 10px;       
+}
+
+.filter-buttons button {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 16px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: 700;
+}
+
+.filter-buttons button:hover {
+  background: #34AC40;
+  color: #eee;
+  font-style: bold;
+}
+
+.filter-buttons button:active {
+  color: #666666;
+  transform: scale(0.95);
+}
+
+.filter-buttons button:last-child {
+  background: #f97316;
+}

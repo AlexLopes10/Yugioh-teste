@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Este projeto é uma aplicação em React que consome a API YGOProDeck
+para listar cartas de Yu-Gi-Oh!, aplicar filtros, adicionar ao carrinho e simular uma finalização de compra.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FUNCIONALIDADE:
+ Listagem de cartas diretamente da API.
 
-## Available Scripts
+FILTROS AVANÇADOS POR:
+ Tipo (type)
+ Atributo (attribute)
 
-In the project directory, you can run:
+ Paginação dinâmica com escolha de itens por página.
+ Carrinho persistente usando localStorage.
 
-### `npm start`
+RESUMO DA COMPRA COM:
+ Subtotal
+ Tipos de frete (fixo ou combinado)
+ Total a pagar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+FEEDBACK AO USUARIO:
+ Modal de mensagens para ações como adicionar item, limpar filtros ou finalizar compra.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ESTRUTURA:
+ busquei deixar componentizado e com CSS separados para melhor organização.
 
-### `npm test`
+TECNOLOGIAS UTILIZADAS:
+ React 18
+ React Router DOM (navegação entre páginas)
+ Fetch API (requisições à API do YGOProDeck)
+ LocalStorage (persistência do carrinho)
+ CSS Modules organizados por página e componente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+COMO USAR:
+ PAGINA INICIAL:
+  Veja os banners rotativos.
+  Use os filtros para buscar cartas por tipo ou atributo.
+  Altere a quantidade de itens exibidos por página.
+  Adicione cartas ao carrinho.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ CARRINHO:
+  Visualize os itens adicionados com descrição e preço convertido para BRL.
+  Escolha o tipo de frete.
+  Veja o total da compra.
+  Finalize a compra (mensagem de sucesso e carrinho esvaziado).
